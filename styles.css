@@ -6,21 +6,30 @@ body {
     background-color: #f4f4f4;
     color: #333;
 }
-
-/* Header */
+/*header */
 header {
     background-color: #002d62; /* Navy Blue */
     color: white;
     text-align: center;
-    padding: 1rem 0;
+    padding: 2rem 0;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    font-style: italic;
 }
 
 nav ul {
     list-style: none;
+    padding: 0;
+    margin: 1rem 0 0 0;
     display: flex;
     justify-content: center;
-    padding: 0;
-    margin: 0;
 }
 
 nav ul li {
@@ -32,37 +41,43 @@ nav ul li a {
     text-decoration: none;
     font-weight: bold;
 }
-
 /* Sections */
 section {
     padding: 2rem;
+    text-align: center;
 }
 
 h2 {
     color: #002d62;
+    margin-bottom: 1rem;
+}
+
+p {
+    line-height: 1.6;
 }
 
 /* Services Section */
+
 .service {
     display: inline-block;
     width: 30%;
+    margin: 1rem;
+    background: white;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    transition: transform 0.3s, box-shadow 0.3s;
     text-align: center;
     padding: 1rem;
-    margin: 0.5rem;
-    background: white;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.service:hover {
-    transform: scale(1.05); /* Slight zoom on hover */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
 }
 
 .service img {
     width: 100%;
     border-radius: 8px;
+}
+
+.service:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 /* Slider Styles */
 #slider {
@@ -95,7 +110,64 @@ h2 {
 .active {
     display: block; /* Display active slide */
 }
+/* Form Styles */
+#contact-form {
+    padding: 2rem;
+    background-color: #002d62;
+    color: white;
+}
 
+form {
+    max-width: 500px;
+    margin: auto;
+}
+
+label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    display: block;
+    margin-top: 1rem;
+    padding: 0.5rem 2rem;
+    background-color: #f4a261; /* Accent color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e76f51; /* Darker shade for hover */
+}
+/* Blog Section */
+#blog ul {
+    list-style: none;
+    padding: 0;
+}
+
+#blog ul li {
+    margin: 0.5rem 0;
+}
+
+#blog ul li a {
+    color: #002d62;
+    text-decoration: none;
+}
+
+#blog ul li a:hover {
+    text-decoration: underline;
+}
 
 /* Footer */
 footer {
